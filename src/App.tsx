@@ -5,6 +5,7 @@ import Container from './components/Container'
 function App() {
   return (
     <Container className='centerAll gap-11'>
+      <h1 className='text-high font-bold text-4xl'>City News</h1>
       <MainCard />
       <LeftCard />
       <RightCard />
@@ -39,13 +40,13 @@ function MainCard({}) {
 
 function LeftCard({}) {
   return (
-    <Card className='relative sm:w-[80%]'>
+    <Card className='relative w-[90%] sm:w-[80%]'>
       <img
         src='https://picsum.photos/1000/600'
         alt=''
-        className='shadow-lg h-[70%] w-[170px] sm:h-[80%] sm:w-[300px] rounded-xl absolute left-16 top-1/2 -translate-y-1/2 -translate-x-1/2'
+        className='shadow-lg h-[70%] w-[170px] sm:h-[80%] sm:w-[300px] rounded-xl absolute left-14 top-1/2 -translate-y-1/2 -translate-x-1/2'
       />
-      <div className='ml-36 sm:ml-40'>
+      <div className='ml-36 sm:ml-52'>
         <div className='flex gap-5 mb-2'>
           <img src='https://picsum.photos/50/50' alt='' className='rounded' />
           <div>
@@ -63,13 +64,13 @@ function LeftCard({}) {
 }
 function RightCard({}) {
   return (
-    <Card className='relative sm:w-[80%]'>
+    <Card className='relative w-[90%] sm:w-[80%]'>
       <img
         src='https://picsum.photos/1000/600'
         alt=''
-        className='shadow-lg h-[70%] w-[170px] sm:h-[80%] sm:w-[300px] rounded-xl absolute top-1/2 -right-80 -translate-y-1/2 -translate-x-1/2'
+        className='shadow-lg h-[70%] w-[170px] sm:h-[80%] sm:w-[300px] rounded-xl absolute right-[-115px] sm:-right-80 top-1/2 -translate-y-1/2 -translate-x-1/2'
       />
-      <div className='mr-36 sm:mr-40'>
+      <div className='mr-36 sm:mr-52'>
         <div className='flex gap-5 mb-2'>
           <img src='https://picsum.photos/50/50' alt='' className='rounded' />
           <div>
@@ -79,8 +80,6 @@ function RightCard({}) {
         </div>
         <p>
           Lorem sit nisi eiusmod excepteur reprehenderit commodo elit sunt laborum dolor deserunt
-          non enim exercitation. Fugiat eu tempor aute aliqua commodo ullamco deserunt commodo
-          voluptate aliquip fugiat enim. Sunt eiusmod tempor non nisi duis adipisicing dolor do.
         </p>
         <MediaIcons />
       </div>
