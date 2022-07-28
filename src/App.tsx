@@ -2,7 +2,7 @@ import Button from './components/Button'
 import Card from './components/Card'
 import Container from './components/Container'
 
-function App() {
+export default function App() {
   return (
     <Container className='centerAll gap-11'>
       <h1 className='text-high font-bold text-4xl'>City News</h1>
@@ -14,13 +14,10 @@ function App() {
   )
 }
 
-export default App
-// https://picsum.photos/200/300
-
 function MainCard({}) {
   return (
     <div className='sm:w-[1000px] sm:h-[600px] relative centerAll mb-32'>
-      <img src='https://picsum.photos/1000/600' alt='' className='w-full rounded-xl' />
+      <img src='https://picsum.photos/1000/600' alt='' className='w-full rounded-xl shadow-2xl' />
       <Card className='absolute -bottom-32 w-[90%]'>
         <div className='flex gap-5 mb-2'>
           <img src='https://picsum.photos/50/50' alt='' className='rounded' />
@@ -44,7 +41,7 @@ function LeftCard({}) {
       <img
         src='https://picsum.photos/1000/600'
         alt=''
-        className='shadow-lg h-[70%] w-[170px] sm:h-[80%] sm:w-[300px] rounded-xl absolute left-14 top-1/2 -translate-y-1/2 -translate-x-1/2'
+        className='shadow-2xl h-[70%] w-[170px] sm:h-[80%] sm:w-[300px] rounded-xl absolute left-14 top-1/2 -translate-y-1/2 -translate-x-1/2'
       />
       <div className='ml-36 sm:ml-52'>
         <div className='flex gap-5 mb-2'>
@@ -68,7 +65,7 @@ function RightCard({}) {
       <img
         src='https://picsum.photos/1000/600'
         alt=''
-        className='shadow-lg h-[70%] w-[170px] sm:h-[80%] sm:w-[300px] rounded-xl absolute right-[-115px] sm:-right-80 top-1/2 -translate-y-1/2 -translate-x-1/2'
+        className='shadow-2xl h-[70%] w-[170px] sm:h-[80%] sm:w-[300px] rounded-xl absolute right-[-115px] sm:-right-80 top-1/2 -translate-y-1/2 -translate-x-1/2'
       />
       <div className='mr-36 sm:mr-52'>
         <div className='flex gap-5 mb-2'>
