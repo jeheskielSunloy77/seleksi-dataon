@@ -9,25 +9,30 @@ export default function App() {
       <MainCard />
       <LeftCard />
       <RightCard />
+      <LeftCard />
+      <RightCard />
       <Button text='Post News' />
     </Container>
   )
 }
 
-function MainCard({}) {
+function MainCard() {
   return (
-    <div className='sm:w-[1000px] sm:h-[600px] relative centerAll mb-32'>
+    <div className='sm:w-[70%] relative centerAll mb-32'>
       <img src='https://picsum.photos/1000/600' alt='' className='w-full rounded-xl shadow-2xl' />
       <Card className='absolute -bottom-32 w-[90%]'>
         <div className='flex gap-5 mb-2'>
           <img src='https://picsum.photos/50/50' alt='' className='rounded' />
           <div>
             <h1 className='text-high font-bold'>Do consectetur aute et occaecat.</h1>
-            <span>8 Nov 2022</span>
+            <span>29 Dec 2021</span>
           </div>
         </div>
-        <p>
-          Lorem sit nisi eiusmod excepteur reprehenderit commodo elit sunt laborum dolor deserunt
+        <p className='line-clamp-3'>
+          Et fugiat est aliqua adipisicing cillum fugiat do enim deserunt excepteur laboris quis
+          proident. Qui cillum ullamco commodo mollit dolore cillum deserunt nulla ipsum commodo
+          nostrud aliquip nostrud. Pariatur commodo minim irure esse quis excepteur ex aute
+          adipisicing veniam. Duis sunt consequat amet adipisicing proident ullamco mollit.
         </p>
         <MediaIcons />
       </Card>
@@ -35,7 +40,7 @@ function MainCard({}) {
   )
 }
 
-function LeftCard({}) {
+function LeftCard() {
   return (
     <Card className='relative w-[90%] sm:w-[80%]'>
       <img
@@ -51,15 +56,18 @@ function LeftCard({}) {
             <span>8 Nov 2022</span>
           </div>
         </div>
-        <p>
-          Lorem sit nisi eiusmod excepteur reprehenderit commodo elit sunt laborum dolor deserunt
+        <p className='line-clamp-3'>
+          Voluptate magna Lorem cupidatat cillum quis adipisicing deserunt ut cillum. Est occaecat
+          elit veniam velit esse voluptate mollit minim dolore. Consectetur adipisicing cupidatat
+          est aliquip tempor est amet reprehenderit consequat laboris qui Lorem. Ut Lorem do duis
+          cillum amet culpa ut pariatur.
         </p>
         <MediaIcons />
       </div>
     </Card>
   )
 }
-function RightCard({}) {
+function RightCard() {
   return (
     <Card className='relative w-[90%] sm:w-[80%]'>
       <img
@@ -75,8 +83,11 @@ function RightCard({}) {
             <span>8 Nov 2022</span>
           </div>
         </div>
-        <p>
-          Lorem sit nisi eiusmod excepteur reprehenderit commodo elit sunt laborum dolor deserunt
+        <p className='line-clamp-3'>
+          Pariatur eu irure irure consectetur deserunt excepteur excepteur ex fugiat et qui.
+          Cupidatat et minim in minim nisi id excepteur ipsum duis aliqua et ullamco. Cillum ad
+          dolore sit irure pariatur ex velit ut aliquip ea aute. Nostrud dolore ex ex consequat non
+          adipisicing elit deserunt eu anim. Excepteur exercitation irure esse exercitation aute ad
         </p>
         <MediaIcons />
       </div>
